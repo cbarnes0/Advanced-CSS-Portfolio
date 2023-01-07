@@ -138,8 +138,14 @@ nav a:hover {
 }
 
 #contactInfo {
-  display: flex;
+  display: block;
+  text-align: center;
   flex-direction: row;
+  justify-content: center;
+}
+
+.contact ul li {
+  margin: 20px;
 }
 
 @media screen and (min-width: 481px) {
@@ -155,6 +161,10 @@ nav a:hover {
   header {
     justify-content: space-between;
     flex-wrap: nowrap;
+  }
+
+  #contactInfo {
+    display: flex;
   }
 }
 
