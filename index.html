@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Assets/reset.css" />
+    <link rel="stylesheet" href="Assets/style.css" />
 </head>
 
 <body>
     <header>
         <h1>Carson Barnes</h1>
+        <div id="profilePicture"><img src="./Assets/Images/profile picture cropped.JPG"></div>
         <nav>
             <ul>
                 <li>
@@ -24,18 +27,52 @@
             </ul>
         </nav>
     </header>
+    <section>
+        <!-- Image place holder / subtitle -->
+    </section>
+    <main class="content">
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
+        <section class="aboutMe" id="AboutMe">
+            <h2 id="aboutMeTitle">About Me</h2>
+            <p id="aboutMeInfo">
                 My name is Carson Barnes and I am a creator. I have a BFA from the University of Georgia and I am currently a student in the GA Tech Full Stack Development Bootcamp. 
                 I am loving learning how to code and can't wait to continue learning!
             </p>
         </section>
-        <section>
+
+        <div class="projectsAndContent">
+        <h2 id="projectsTitle">Projects</h2>
+        <section class="projects" id="Projects">
+            
+            <div id="largeSection">
+                <h3>Horiseon Refactor</h3>
+                <img>
+            </div>
+
+            <div id="smallSection">
+                <div class="card">
+                    <h3>Mini Project</h3>
+                    <img>
+                </div>
+                <div class="card">
+                    <h3>Study Guide</h3>
+                    <img>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <section class="contact" id="Contact">
+            <h2 id="contactTitle">Contact</h2>
+            
+            <ul id="contactInfo">
+                <li>000-000-0000</li>
+                <li>email@gmail.com</li>
+                <li><a href="https://github.com/cbarnes0">GitHub</a></li>
+            </ul>
             
         </section>
+
     </main>
     
 </body>

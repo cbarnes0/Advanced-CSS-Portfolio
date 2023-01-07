@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+header {
+    background-color: lightblue;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+#profilePicture {
+    clip-path: circle(40%);
+    width: 100px;
+    display: none;
+  } 
+  
+  header h1 {
+    margin: 0;
+  }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+nav li {
+    margin: 0 10px;
+  }
+  
+nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+nav a:hover {
+    color: yellow;
+  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutMe {
+    display: block;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 1px black solid;
+    max-width: 100%;
+    width: 90%;
+    align-items: center;
+  }
+    
+#aboutMeTitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 2.5px black solid;
+  white-space: nowrap;
+  font-size: 32px;
+  }
+
+#aboutMeInfo {
+  margin: 20px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.projectsAndContent {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border: 1px black solid;
+  max-width: 100%;
+  width: 90%;
+}
+
+#projectsTitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 2.5px black solid;
+  white-space: nowrap;
+  font-size: 32px;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border: 1px black solid;
+  max-width: 100%;
+  width: 90%;
+  align-items: center;
+}
+
+#contactTitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 2.5px black solid;
+  white-space: nowrap;
+  font-size: 32px;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 481px) {
+  
+  #profilePicture {
+    display: flex;
+  }
+
+  #aboutMeInfo {
+    font-size: 16px;
+  }
+
+  header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  .aboutMe {
+    display: flex;
+  }
+
+  #aboutMeTitle {
+    border: 2.5px black solid;
+  }
+
+  .projects {
+    width: 90%;
+  }
+
+  #projectsTitle {
+    border: 2.5px black solid;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  #contactTitle {
+    border: 2.5px black solid;
+  }
+
+  #contactInfo {
+    width: 90%;
+  }
+
+  .projectsAndContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+
+
