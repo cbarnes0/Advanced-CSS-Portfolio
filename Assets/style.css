@@ -54,11 +54,21 @@ nav a:hover {
   }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  } 
+
+.sectionTitle {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 2.5px black solid;
+    white-space: nowrap;
+    font-size: 32px;
+  }
 
 .aboutMe {
     display: block;
@@ -70,119 +80,88 @@ nav a:hover {
     width: 90%;
     align-items: center;
   }
-    
-#aboutMeTitle {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 20px;
-  border-bottom: 2.5px black solid;
-  white-space: nowrap;
-  font-size: 32px;
-  }
 
 #aboutMeInfo {
-  margin: 20px;
-  position: relative;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-}
+    margin: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
 
 .projectsAndContent {
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin: 20px;
-  padding: 20px;
-  border: 1px black solid;
-  max-width: 100%;
-  width: 90%;
-}
-
-#projectsTitle {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 20px;
-  border-bottom: 2.5px black solid;
-  white-space: nowrap;
-  font-size: 32px;
-}
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 1px black solid;
+    max-width: 100%;
+    width: 90%;
+  }
 
 .projects {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
 h3 {
-  position: absolute;
-  background-color: white;
-  border: 1px black solid;
-  padding: 5px;
-  margin: 5px;
-}
+    position: absolute;
+    background-color: white;
+    border: 1px black solid;
+    padding: 5px;
+    margin: 5px;
+  }
 
 #largeSection { 
-  width: 80%;
-  position: relative;
-}
+    width: 80%;
+    position: relative;
+  }
 
 #largeSection:hover {
-  opacity: 75%;
-}
+    opacity: 75%;
+  }
 
 #smallSection {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 90%;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+  }
 
 .card {
-  width: 50%;
-  margin: 5px;
-  position: relative;
-}
+    width: 50%;
+    margin: 5px;
+    position: relative;
+  }
 
 .card:hover {
-  opacity: 75%;
-  transition-delay: 0.5s ease-in-out;
-}
+    opacity: 75%;
+  }
 
 .contact {
-  display: block;
-  position: relative;
-  margin: 20px;
-  padding: 20px;
-  border: 1px black solid;
-  max-width: 100%;
-  width: 90%;
-  align-items: center;
-}
-
-#contactTitle {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 20px;
-  border-bottom: 2.5px black solid;
-  white-space: nowrap;
-  font-size: 32px;
+    display: block;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 1px black solid;
+    max-width: 100%;
+    width: 90%;
+    align-items: center;
 }
 
 #contactInfo {
-  display: block;
-  text-align: center;
-  flex-direction: row;
-  justify-content: center;
-}
+    display: block;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+  }
 
 .contact ul li {
-  margin: 20px;
-}
+    margin: 20px;
+  }
 
 @media screen and (min-width: 481px) {
   
@@ -210,7 +189,7 @@ h3 {
     display: flex;
   }
 
-  #aboutMeTitle {
+  .sectionTitle {
     border: 2.5px black solid;
   }
 
@@ -219,7 +198,6 @@ h3 {
   }
 
   #projectsTitle {
-    border: 2.5px black solid;
     display: flex;
     align-self: flex-start;
     flex-direction: column;
@@ -227,10 +205,6 @@ h3 {
 
   .contact {
     display: flex;
-  }
-
-  #contactTitle {
-    border: 2.5px black solid;
   }
 
   #contactInfo {
